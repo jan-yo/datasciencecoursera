@@ -1,0 +1,76 @@
+Last login: Thu Sep 24 20:49:02 on ttys000
+JANYO:~ janyolihu$ cd ~/datasciencecoursera
+JANYO:datasciencecoursera janyolihu$ git add .
+JANYO:datasciencecoursera janyolihu$ git commit -m "created helloworld.md"
+[master 3e942dc] created helloworld.md
+ 3 files changed, 118 insertions(+)
+ create mode 100644 commit message
+JANYO:datasciencecoursera janyolihu$ git commit -a
+On branch master
+nothing to commit, working directory clean
+JANYO:datasciencecoursera janyolihu$ git add helloworld.md
+JANYO:datasciencecoursera janyolihu$ git commit
+On branch master
+nothing to commit, working directory clean
+JANYO:datasciencecoursera janyolihu$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+JANYO:datasciencecoursera janyolihu$ git push helloworld https://github.com/jan-yo/datasciencecoursera
+fatal: remote part of refspec is not a valid name in https://github.com/jan-yo/datasciencecoursera
+JANYO:datasciencecoursera janyolihu$ git push helloworld.md
+To https://github.com/jan-yo/datasciencecoursera
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/jan-yo/datasciencecoursera'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+JANYO:datasciencecoursera janyolihu$ git push helloworld.md https://github.com/jan-yo/datasciencecoursera
+fatal: remote part of refspec is not a valid name in https://github.com/jan-yo/datasciencecoursera
+JANYO:datasciencecoursera janyolihu$ git status
+On branch master
+nothing to commit, working directory clean
+JANYO:datasciencecoursera janyolihu$ git pull
+fatal: No remote repository specified.  Please, specify either a URL or a
+remote name from which new revisions should be fetched.
+JANYO:datasciencecoursera janyolihu$ git pull https://github.com/jan-yo/datasciencecoursera
+warning: no common commits
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/jan-yo/datasciencecoursera
+ * branch            HEAD       -> FETCH_HEAD
+
+
+Merge https://github.com/jan-yo/datasciencecoursera
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-uu-:**-F1  MERGE_MSG      All L2     (Fundamental)-----------------------------
+
